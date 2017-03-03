@@ -274,7 +274,7 @@ curl -u "${RETRIEVE_AND_RANK_USER}":"${RETRIEVE_AND_RANK_PASSWORD}" "https://gat
 * Once trained, query the ranker to view reranked results. See the example curl below, note that the `select` parameter has been changed to `fcselect`.
 
 ```
-https://${RETRIEVE_AND_RANK_USER}:${RETRIEVE_AND_RANK_PASSWORD}@gateway.watsonplatform.net/retrieve-and-rank/api/v1/solr_clusters/${SOLR_CLUSTER_ID}/solr/example_collection/fcselect?ranker_id=${RANKER_ID}&q=what%20is%20the%20basic%20mechanism%20of%20the%20transonic%20aileron%20buzz&wt=json&fl=id%2Ctitle
+curl "https://${RETRIEVE_AND_RANK_USER}:${RETRIEVE_AND_RANK_PASSWORD}@gateway.watsonplatform.net/retrieve-and-rank/api/v1/solr_clusters/${SOLR_CLUSTER_ID}/solr/example_collection/fcselect?ranker_id=${RANKER_ID}&q=what%20is%20the%20basic%20mechanism%20of%20the%20transonic%20aileron%20buzz&wt=json&fl=id%2Ctitle"
 ```
 
 * After evaluating the reranked search results, you can refine them by repeating the steps above starting with training the ranker. You can also add new documents, as described in the stage before training the ranker, to broaden the scope of the search. Repeat the process until you are completely satisfied with the results. This can require multiple iterations of refining and reranking.
