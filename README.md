@@ -8,7 +8,7 @@ This is a fixed version of the lab originally hosted [here](https://www.ibm.com/
 
 ```
 RETRIEVE_AND_RANK_USER=<userIdFromServiceInstance>
-RETRIEVE_AND_RANK_PASSWORD==<passwordFromServiceInstance>
+RETRIEVE_AND_RANK_PASSWORD=<passwordFromServiceInstance>
 ```
 
 ### Create a SOLR cluster
